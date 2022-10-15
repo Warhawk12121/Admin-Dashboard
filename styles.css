@@ -5,7 +5,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     min-height: 100vh;
     font-family: 'Artifika',Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -25,7 +25,9 @@ header{
     background-color: white;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
+    padding-left: 30px;
+    justify-content: space-between;
 }
 .main{
     display: grid;
@@ -64,8 +66,8 @@ li>svg{
     font-weight: 600;
 }
 svg{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 
 ul{
@@ -74,8 +76,11 @@ ul{
 input{
     background-color: #cffafe;
     border: none;
-    border-radius: 5px;
-    width: clamp(200px,50%,500px);
+    border-radius: 20px;
+    height: 1.5rem;
+    /* width: clamp(200px,50%,500px); */
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 img{
     height: 40px;
@@ -92,9 +97,46 @@ img{
 button{
     background-color: #0ea5e9;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     cursor: pointer;
     height: 30px;
-    width: 60px;
+    width: 80px;
+}
+
+.head-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 8fr;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.hello{
+    font-size: 0.7rem;
+}
+.uname{
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    gap: 20px;
+}
+.tp-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
 }
