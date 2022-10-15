@@ -208,7 +208,9 @@ button{
 }
 button:hover{
     background-color:#64cbfb ;
+    transform: scale(1.2);
 }
 li:hover{
     background-color: #64cbfb;
+    transform: scale(1.2);
 }
