@@ -28,12 +28,16 @@ header{
     grid-auto-flow: row;
     padding-left: 30px;
     justify-content: space-between;
+    box-shadow: 0px 10px 4px grey;
 }
 .main{
     display: grid;
     grid-row: 3/span;
     grid-column: 3/span;
     background-color: #cffafe;
+    gap: 10px;
+    grid-template-columns: 4fr 2fr;
+    padding-top: 10px;
 }
 
 li{
@@ -102,6 +106,7 @@ button{
     cursor: pointer;
     height: 30px;
     width: 80px;
+    font-weight: 700;
 }
 
 .head-text{
@@ -132,6 +137,7 @@ button{
     justify-content: center;
     padding-right: 20px;
     gap: 20px;
+    
 }
 .tp-right{
     display: flex;
@@ -139,4 +145,38 @@ button{
     justify-content: center;
     gap: 20px;
     padding-right: 20px;
+}
+.card{
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0xp 4px 4px grey;
+}
+.left{
+    display: grid;
+    grid-template-rows: 1f 6fr;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 0.7rem;
+}
+.right{
+    display: grid;
+}
+.extra>svg{
+    height: 15px;
+    width: 15px;
+}
+.extra{
+    display: flex;
+    justify-content: end;
 }
