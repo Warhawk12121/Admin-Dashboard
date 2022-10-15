@@ -27,14 +27,14 @@ header{
     grid-auto-flow: row;
     padding-left: 30px;
     justify-content: space-between;
-    box-shadow: 0px 4px 4px rgb(195, 188, 188);
+    box-shadow: 0px 3px 3px rgb(195, 188, 188);
     z-index: 1;
 }
 .main{
     display: grid;
     grid-row: 3/span;
     grid-column: 3/span;
-    background-color: #cffafe;
+    background-color: #bae6fd;
     gap: 10px;
     grid-template-columns: 4fr 2fr;
     padding-top: 10px;
@@ -75,14 +75,14 @@ svg{
 }
 
 ul{
+    cursor: pointer;
     padding-left: 14px;
 }
 input{
-    background-color: #cffafe;
+    background-color: #bae6fd;
     border: none;
     border-radius: 20px;
     height: 1.5rem;
-    /* width: clamp(200px,50%,500px); */
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -205,4 +205,10 @@ button{
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 4px 4px grey;
+}
+button:hover{
+    background-color:#64cbfb ;
+}
+li:hover{
+    background-color: #64cbfb;
 }
